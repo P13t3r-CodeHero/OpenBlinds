@@ -3,11 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav-bar');
     const navLinks = document.querySelectorAll('.nav-bar li a');
     const sections = document.querySelectorAll('section');
+    const menuIcon = document.getElementById("menu-icon");
+    const navLink = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", function () {
+      navLink.classList.toggle("show");
+    });
   
     function changeActiveLink() {
       let index = sections.length;
   
-      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      while (--index && window.scrollY + 600 < sections[index].offsetTop) {}
   
       navLinks.forEach((link) => link.classList.remove('current'));
       if (index >= 0) {

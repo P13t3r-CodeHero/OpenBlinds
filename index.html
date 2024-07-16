@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>Open Blinds</title>
   </head>
   <body>
@@ -12,10 +17,14 @@
         <h1 class="logo">
           <a href="#Home">Open Blinds</a>
         </h1>
-        <ul>
+        <div class="menu-icon" id="menu-icon">
+          &#9776;
+        </div>
+        <ul class="nav-links">
           <li><a href="#Home" class="current">Home</a></li>
           <li><a href="#About">About</a></li>
-          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Testimonial">Testimonials</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
@@ -23,51 +32,47 @@
 
     <div id="Home" class="hero">
       <div class="container">
-        <h1>Welcome To Open Blinds!</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, deleniti. Repellat praesentium laudantium quibusdam dolores dolorum inventore sunt quam magnam!</p>
+        <h1>Shade up your windows!</h1>
       </div>
     </div>
 
     <div class="sections">
       <section id="About">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi dicta accusantium praesentium voluptas dolor earum consequatur, velit blanditiis ipsam molestiae, ad in alias eius cupiditate libero tempora esse labore itaque, illum cumque. Iusto ex commodi aliquam cum ipsa debitis, rerum provident velit deleniti, consequuntur adipisci excepturi deserunt placeat? Fugit sit consequatur sint repellat, itaque autem, reprehenderit laboriosam magni laudantium molestiae distinctio quasi atque? Temporibus at, eaque magnam inventore quae aliquid eveniet optio natus labore delectus ea minus, rem quod exercitationem in asperiores earum perspiciatis id animi error velit cumque officia vero voluptatem. Doloribus dolor eos ipsum, est quis inventore!</p>
+        <div class="about">
+          <div class="about-section-image">
+            <div class="about-image1"></div>
+            <div class="about-image2"></div>
+            <div class="about-image3"></div>
+          </div>
+          <div class="about-section">
+            <h2>About</h2>
+            <p>Welcome to Open Blinds, where innovation meets excellence. We set the highest standards in the window blinds industry, with a commitment to exceptional service at our core. Our meticulous craftsmanship has earned us a reputation as a leading blinds installer. Our expert team ensures every project is executed with precision and care, exceeding expectations.</p>
+            <p>We are your trusted partners in transforming your home. Our high-quality products and personalized approach guarantee the perfect solution for your needs. With free quotes and installation, we make the process seamless. Choose Open Blinds for superior window blinds and unparalleled quality.</p>
+          </div>
+        </div>
       </section>
 
-      <section id="Gallery">
-        <h2>Gallery</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="card-header">
-              <img src="https://static.wixstatic.com/media/d4976a_0e7b115d2dc648c39c9c2fd34272e243~mv2.jpg/v1/fill/w_569,h_505,al_c,lg_1,q_80,enc_auto/d4976a_0e7b115d2dc648c39c9c2fd34272e243~mv2.jpg" alt="" >
-            </div>
-            <div class="card-body">
-              <h3>Plaswood Blind</h3>
-              <hr>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet natus illo sed magnam ut delectus, consectetur enim et nesciunt.</p>
-              <button class="card-btn">View More</button>
-            </div>
+      <section id="Services">
+        <div class="services-section">
+          <h2>Services</h2>
+          <div class="sub-service-section">
+            <span class="service-text"><p class="number">01</p><p class="text">We offer professional and free installation of all our blinds to ensure a perfect fit and seamless integration with your existing décor. Our expert installers handle every detail, so you don't have to lift a finger.</p></span>
+            <span class="service-text"><p class="text">Get a free, no-obligation quote for your window treatment needs. Our friendly staff will assess your space, understand your preferences, and provide an accurate estimate to help you make an informed decision.</p><p class="number">02</p></span>
+            <span class="service-text"><p class="number">03</p><p class="text">We specialize in creating custom blinds tailored to your specific measurements and style preferences. Choose from a wide range of materials, colors, and designs to match your unique taste.</p></span>
+            <span class="service-text"><p class="text">Unsure of what you need? Book a consultation with our design experts who will guide you through the selection process, helping you choose the best blinds for your space.</p><p class="number">04</p></span>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="https://static.wixstatic.com/media/d4976a_2930e3d060974ad89ed5725cf8e1441a~mv2.jpg/v1/fill/w_294,h_294,al_c,lg_1,q_80,enc_auto/d4976a_2930e3d060974ad89ed5725cf8e1441a~mv2.jpg" alt="" >
-            </div>
-            <div class="card-body">
-              <h3>Aluwood Blind</h3>
-              <hr>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet natus illo sed magnam ut delectus, consectetur enim et nesciunt.</p>
-              <button class="card-btn">View More</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="https://static.wixstatic.com/media/d4976a_e4d95a7d535643b49e065afb51ed3ced~mv2.jpg/v1/fill/w_340,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d4976a_e4d95a7d535643b49e065afb51ed3ced~mv2.jpg" alt="" >
-            </div>
-            <div class="card-body">
-              <h3>Honeycomb Blind</h3>
-              <hr>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet natus illo sed magnam ut delectus, consectetur enim et nesciunt.</p>
-              <button class="card-btn">View More</button>
+        </div>
+      </section>
+
+      <section id="Testimonial">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+          <div class="testimonial-container active">
+            <div class="fas fa-quote-right fa-quote"></div>
+            <div class="fas fa-quote-left fa-quote"></div>
+            <p class="testimonial">We recently worked with JC of Open Blinds for new blinds at our Mozambique lodge and are thrilled with the results. JC combined professionalism with a personal touch, from consultation to installation. The blinds transformed our rooms with better light control and privacy, much appreciated by our guests. The process was seamless and minimally disruptive. We highly recommend Open Blinds for their quality work and dedication.</p>
+            <div class="user">
+              <h4 class="userName">Marno Van Eijk</h4>
             </div>
           </div>
         </div>
@@ -76,33 +81,50 @@
       <section id="Contact">
         <h2>Get in touch with us!</h2>
         <p>We're here to help and answer any questions that you might have. We look forward to hearing from you!</p>
-        <div style="display: flex;justify-content: space-evenly;">
-          <div>
-            <div class="contact">
-              <a><img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" height="40px" width="40px"></a>
-              <a style="padding-left: 20px;">Portion 31 of Farm Alkmaar, Mbombela</a>
-            </div>
-            <div class="contact">
-              <a href="mailto:openblinds1@outlook.com"><img src="https://cdn-icons-png.flaticon.com/128/542/542638.png" height="40px" width="40px"></a>
-              <a style="padding-left: 20px;" href="mailto:openblinds1@outlook.com">openblinds1@outlook.com</a>
-            </div>
-            <div class="contact">
-              <a><img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" height="40px" width="40px"></a>
-              <a style="padding-left: 20px;">072 802 9022</a>
-            </div>
-           </div>
-           <div class="handyman-contact">
-            <img src="handyman.png" alt="" height="300px" width="250px">
+        <div class="contact-section">
+          <div class="contact-form">
+            <form action="#" method="post">
+                <div class="input-block">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-block">
+                    <input type="text" id="surname" name="surname" required>
+                    <label for="surname">Surname</label>
+                </div>
+                <div class="input-block">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-block">
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Contact Number</label>
+                </div>
+                <div class="input-block">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <div class="input-block">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Testimonial</h2>
-        <div class="testimonial-container">
-          <div class="progresss-bar"></div>
-          <div class="fas fa-quote-right fa-quote"></div>
-          <div class="fas fa-quote-left fa-quote"></div>
+          <div style="display: flex;justify-content: space-evenly;">
+            <div>
+              <div class="contact">
+                <a><img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" height="40px" width="40px"></a>
+                <a>Portion 31 of Farm Alkmaar, Mbombela</a>
+              </div>
+              <div class="contact">
+                <a href="mailto:openblinds1@outlook.com"><img src="https://cdn-icons-png.flaticon.com/128/542/542638.png" height="40px" width="40px"></a>
+                <a href="mailto:openblinds1@outlook.com">openblinds1@outlook.com</a>
+              </div>
+              <div class="contact">
+                <a><img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" height="40px" width="40px"></a>
+                <a>072 802 9022</a>
+              </div>
+             </div>
+          </div>
         </div>
       </section>
     </div>
