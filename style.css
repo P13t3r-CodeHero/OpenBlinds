@@ -178,6 +178,7 @@ body {
 
 .about {
   display: flex;
+  justify-content: center;
 }
 
 .about-section-image {
