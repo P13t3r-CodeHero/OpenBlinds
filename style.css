@@ -12,9 +12,9 @@ body {
 }
 
 .logo {
-  width: 40px;
+  width: 70px;
   height: 40px;
-  background-image: url('Logo.jpg');
+  background-image: url('OpenBlindsLogo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,13 +43,13 @@ body {
 .container-logo {
   width: 400px;
   height: 400px;
-  background-image: url('Logo.jpg');
+  background-image: url('Copy\ of\ Open\ Blinds\ -\ 1.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
   background-position: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   margin-left: 150px;
+  margin-top: 50px;
 }
 
 .nav-bar {
@@ -409,7 +409,7 @@ footer p a {
 
 .contact a {
   cursor: pointer;
-  color: #FFF;
+  color: #555;
   text-decoration: none;
   padding-left: 20px;
 }
@@ -530,4 +530,39 @@ footer p a {
 
 .input-block button:hover {
   background-color: #4a89c7;
+}
+
+.product-section {
+  display: flex;
+  align-items: center;
+}
+
+.product-cards {
+  width: 250px;
+  height: 500px;
+  position: relative;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #FFF;
+  margin: 10px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
 }
