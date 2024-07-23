@@ -4,6 +4,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const menuIcon = document.getElementById("menu-icon");
     const navLink = document.querySelector(".nav-links");
+    const testimonials = document.querySelectorAll(".testimonial-container");
+    const next = document.getElementById("next");
+    const previous = document.getElementById("previous");
+    let currentIndex = 0;
+
+    const updateTestimonialDisplay = () => {
+        testimonials.forEach((testimonial, index) => {
+            if (index === currentIndex) {
+                testimonial.classList.add("active-testimonial");
+            } else {
+                testimonial.classList.remove("active-testimonial");
+            }
+        });
+    };
+
+    next.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonialDisplay();
+    });
+
+    previous.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonialDisplay();
+    });
+
+    // Initial display
+    updateTestimonialDisplay();
 
     menuIcon.addEventListener("click", function () {
       navLink.classList.toggle("show");
