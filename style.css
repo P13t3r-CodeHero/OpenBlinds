@@ -534,12 +534,13 @@ footer p a {
 
 .product-section {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-cards {
-  width: 250px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
   position: relative;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -547,22 +548,81 @@ footer p a {
   margin: 10px;
   color: #555;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   padding: 10px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
+.product-cards:hover {
+  cursor: pointer;
+}
+
 .product-img {
   position: relative;
-  top: 0;
-  left: 0;
   overflow: hidden;
-  background-position: top center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 245px;
+  height: 300px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.product-description {
+  align-items: center;
+  width: 245px;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20%;
+  justify-content: center;
+}
+
+.product-description p {
+  display: none
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalImage {
+  width: 100%;
+  height: 400px;
 }
