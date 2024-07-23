@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav-bar');
     const navLinks = document.querySelectorAll('.nav-bar li a');
@@ -49,5 +48,33 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
+
+  function openModal(card) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImage");
+    var modalText = document.getElementById("modalText");
+
+    var cardId = card.getAttribute("data-id");
+    var cardImg = card.querySelector("img").src;
+    var cardText = card.querySelector("p").innerText;
+
+    modalImg.src = cardImg;
+    modalText.innerText = cardText;
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
   
