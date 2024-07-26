@@ -80,13 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modalImage");
     var modalText = document.getElementById("modalText");
+    var modalTitle = document.getElementById("modalTitle");
 
     var cardId = card.getAttribute("data-id");
     var cardImg = card.querySelector("img").src;
     var cardText = card.querySelector("p").innerText;
+    var cardTitle = card.querySelector("h2").innerText;
 
     modalImg.src = cardImg;
     modalText.innerText = cardText;
+    modalTitle.innerText = cardTitle;
 
     modal.style.display = "block";
 }
