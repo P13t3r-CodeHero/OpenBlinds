@@ -192,7 +192,7 @@ body {
 }
 
 .about-section {
-  width: 750px;
+  max-width: 750px;
   height: 500px;
   position: relative;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -313,17 +313,38 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .about-section {
-    max-width: 400px;
-    height: auto;
-    padding: 7px;
-    margin-right: auto;
-    margin-top: -550px;
-    right: 0;
-  }
 
   .about {
     flex-wrap: wrap;
+  }
+
+  .about-section {
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-top: -400px;
+    right: 0;
+  }
+
+  .about-section p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-section {
+    max-width: 370px;
+    height: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-top: -300px;
+    right: 0;
   }
 
   .about-section p {
