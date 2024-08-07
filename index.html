@@ -9,6 +9,9 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <title>Open Blinds</title>
   </head>
   <body>
@@ -222,25 +225,25 @@
         <p>We're here to help and answer any questions that you might have. We look forward to hearing from you!</p>
         <div class="contact-section">
           <div class="contact-form">
-            <form action="#" method="post">
+            <form id="contactForm">
                 <div class="input-block">
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="Name" name="Name" required>
                     <label for="name">Name</label>
                 </div>
                 <div class="input-block">
-                    <input type="text" id="surname" name="surname" required>
+                    <input type="text" id="Surname" name="Surname" required>
                     <label for="surname">Surname</label>
                 </div>
                 <div class="input-block">
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="Email" name="Email" required>
                     <label for="email">Email</label>
                 </div>
                 <div class="input-block">
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="ContactNumber" name="ContactNumber" required>
                     <label for="phone">Contact Number</label>
                 </div>
                 <div class="input-block">
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="Message" name="Message" rows="5" required></textarea>
                     <label for="message">Message</label>
                 </div>
                 <div class="input-block">
