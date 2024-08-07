@@ -41,6 +41,34 @@ body {
   margin: 50px auto 0;
 }
 
+@media screen and (max-width: 400px) {
+
+  .container-home {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+  }
+  
+  .container-logo-text {
+    max-width: 40%;
+    text-align: left;
+    align-content: center;
+    font-size: medium;
+  }
+  
+  .container-logo {
+    width: 300px;
+    height: 300px;
+    background-image: url('Copy of Open Blinds - 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    background-position: center;
+    margin: 50px auto 0;
+  }
+  
+}
+
 .logo {
   width: 70px;
   height: 40px;
