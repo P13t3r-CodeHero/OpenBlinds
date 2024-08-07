@@ -41,7 +41,7 @@ body {
   margin: 50px auto 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
   .container-home {
     display: flex;
@@ -57,8 +57,8 @@ body {
   }
   
   .container-logo {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     background-image: url('Copy of Open Blinds - 1.png');
     background-repeat: no-repeat;
     background-size: cover;
