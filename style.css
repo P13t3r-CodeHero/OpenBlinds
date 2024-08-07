@@ -11,17 +11,9 @@ body {
   color: #222;
 }
 
-.logo {
-  width: 70px;
-  height: 40px;
-  background-image: url('OpenBlindsLogo.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0px 0px 0px 10px;
-}
-
-.container {
+.container,
+.container-home,
+.container-logo-text {
   max-width: 100%;
   margin: 0 auto;
 }
@@ -29,27 +21,34 @@ body {
 .container-home {
   display: flex;
   justify-content: center;
-  padding: 50px;
-  margin: 50px auto;
+  padding: 32px;
 }
 
 .container-logo-text {
   max-width: 50%;
-  margin: 0 auto;
-  text-align: justify;
+  text-align: left;
   align-content: center;
 }
 
 .container-logo {
   width: 400px;
   height: 400px;
-  background-image: url('Copy\ of\ Open\ Blinds\ -\ 1.png');
+  background-image: url('Copy of Open Blinds - 1.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
   background-position: center;
-  margin-left: 150px;
-  margin-top: 50px;
+  margin: 50px auto 0;
+}
+
+.logo {
+  width: 70px;
+  height: 40px;
+  background-image: url('OpenBlindsLogo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10px;
 }
 
 .nav-bar {
@@ -274,6 +273,62 @@ body {
   border-radius: 5px;
   margin-top: -500px;
   margin-left: 210px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-section {
+    width: 750px;
+    height: auto;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: -350px;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-section p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-top: -350px;
+    right: 0;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-section p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-section {
+    max-width: 400px;
+    height: auto;
+    padding: 7px;
+    margin-right: auto;
+    margin-top: -550px;
+    right: 0;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-section p {
+    font-size: 10px;
+  }
 }
 
 .services-section {
