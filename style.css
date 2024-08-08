@@ -347,14 +347,14 @@ body {
   }
 
   .about-section {
-    width: 400px;
+    width: 420px;
     position: relative;
     height: auto;
     padding: 10px 10px 10px 10px;
+    margin-top: -460px;
     margin-right: auto;
-    margin-top: -450px;
     text-align: center;
-    margin-left: 70px;
+    margin-left: 40px;
   }
 
   .about-section p {
