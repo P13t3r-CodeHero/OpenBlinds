@@ -340,39 +340,21 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 
   .about {
     flex-wrap: wrap;
   }
 
   .about-section {
-    max-width: 400px;
+    width: 400px;
+    position: relative;
     height: auto;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     margin-right: auto;
-    margin-top: -400px;
-    right: 0;
-  }
-
-  .about-section p {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-
-  .about {
-    flex-wrap: wrap;
-  }
-
-  .about-section {
-    max-width: 370px;
-    height: auto;
-    padding: 10px;
-    margin-right: auto;
-    margin-top: -300px;
-    right: 0;
+    margin-top: -450px;
+    text-align: center;
+    margin-left: 70px;
   }
 
   .about-section p {
