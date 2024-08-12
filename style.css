@@ -351,10 +351,10 @@ body {
     position: relative;
     height: auto;
     padding: 10px 10px 10px 10px;
-    margin-top: -460px;
     margin-right: auto;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
   }
 
   .about-section p {
