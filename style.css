@@ -632,16 +632,49 @@ footer p a {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .testimonial-container {
+    margin: 15px auto;
+    padding: 20px 40px;
+    width: 95%;
+    height: 500px;
+  }
+
+  .testimonial {
+    font-size: 10px;
+  }
+
+  .chevrons {
+    font-size: 40px;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  .fa-quote {
+      font-size: 25px;
+  }
+
+  .fa-quote-right {
+      left: 30px;
+  }
+
+  .fa-quote-left {
+      right: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .testimonial-container {
     margin: 15px auto;
     padding: 20px 40px;
     width: 95%;
-    height: 400px;
+    height: 500px;
   }
 
   .testimonial {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .chevrons {
