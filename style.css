@@ -147,6 +147,18 @@ body {
     padding: 10px;
   }
 
+  .nav-bar {
+    background-color: #8c8a63;
+  }
+
+  .nav-bar .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-bar.active .nav-links{
+    background-color: #FFF;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;

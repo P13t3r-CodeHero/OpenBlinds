@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
     navLink.classList.toggle("show");
   });
 
+  navLink.addEventListener("click", function () {
+    navLink.classList.toggle("show");
+  });
+
   function changeActiveLink() {
     let index = sections.length;
 
