@@ -748,6 +748,17 @@ footer p a {
   background-color: #4a89c7;
 }
 
+.validate-form input:invalid,
+.validate-form textarea:invalid {
+  border-color: red;
+}
+
+.validate-form input:invalid + label,
+.validate-form textarea:invalid + label {
+  color: red;
+}
+
+
 .product-section {
   display: flex;
   flex-wrap: wrap;

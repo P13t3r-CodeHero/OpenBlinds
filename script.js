@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const testimonials = document.querySelectorAll(".testimonial-container");
   const next = document.getElementById("next");
   const previous = document.getElementById("previous");
+  const contactForm = document.getElementById('contactForm');
+  const submitButton = contactForm.querySelector('button[type="submit"]');
   let currentIndex = 0;
 
   const updateTestimonialDisplay = () => {
@@ -76,9 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Form submission and toast notifications
-  const contactForm = document.getElementById('contactForm');
-  contactForm.addEventListener('submit', function(event) {
+    contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
+
+      // Perform form validation
+      const isValid = contactForm.checkValidity();
+      if (!isValid) {
+          contactForm.classList.add('validate-form');
+          return;
+      }
+
+      // Disable the submit button
+      submitButton.disabled = true;
+      submitButton.style.backgroundColor = '#cccccc';
 
       const formData = new FormData(this);
       const json = JSON.stringify(Object.fromEntries(formData));
@@ -91,12 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
           body: json
       })
       .then(response => {
-        if (!response.ok) {
-            return response.json().then(error => {
-                throw new Error(error.message || 'There was an error sending the email.');
-            });
-        }
-        return response.json();
+          if (!response.ok) {
+              return response.json().then(error => {
+                  throw new Error(error.message || 'There was an error sending the email.');
+              });
+          }
+          return response.json();
       })
       .then(data => {
           if (data.message) {
@@ -109,7 +121,18 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => {
           toastr.error('There was an error sending the email.', 'Error');
           console.error('Error:', error);
+      })
+      .finally(() => {
+          // Re-enable the submit button after the process is complete
+          submitButton.disabled = false;
+          submitButton.style.backgroundColor = '#5b9bd5';
       });
+  });
+
+  contactForm.addEventListener('input', function() {
+      if (this.classList.contains('validate-form')) {
+          this.classList.remove('validate-form');
+      }
   });
 });
 
