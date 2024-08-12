@@ -346,6 +346,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .about-section-image {
+    display: none;
+  }
+
   .about-section {
     width: 420px;
     position: relative;
@@ -354,7 +358,7 @@ body {
     margin-right: auto;
     text-align: center;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 1px;
   }
 
   .about-section p {
