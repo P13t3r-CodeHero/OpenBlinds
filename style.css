@@ -170,6 +170,10 @@ body {
     z-index: 1;
   }
 
+  .nav-links li {
+    margin: 20px;
+  }
+
   .nav-bar.active .menu-icon {
     color: #000;
   }
@@ -186,6 +190,7 @@ body {
     padding: 15px;
     text-align: center;
     width: 100%;
+    font-size: 17px;
   }
 
   .contact-section {
