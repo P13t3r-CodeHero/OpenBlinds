@@ -33,7 +33,7 @@ body {
 .container-logo {
   width: 400px;
   height: 400px;
-  background-image: url('Copy of Open Blinds - 1.png');
+  background-image: url('OpenBlindsLogoWhite.png');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
@@ -201,7 +201,7 @@ body {
 }
 
 .hero {
-  background-image: url('IMG_0025.JPG');
+  background-image: url('HomeSectionPhoto.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -283,7 +283,7 @@ body {
   overflow: hidden;
   position: relative;
   background-size: cover;
-  background-image: url('IMG_0023.JPG');
+  background-image: url('AboutSectionPhoto1.JPG');
   background-repeat: no-repeat;
   background-position: top center;
   border-radius: 5px;
@@ -297,7 +297,7 @@ body {
   overflow: hidden;
   position: relative;
   background-size: cover;
-  background-image: url('rollerblinds.jpg');
+  background-image: url('AboutSectionPhoto2.JPG');
   background-repeat: no-repeat;
   background-position: top center;
   border-radius: 5px;
@@ -312,7 +312,7 @@ body {
   overflow: hidden;
   position: relative;
   background-size: cover;
-  background-image: url('IMG_0022.JPG');
+  background-image: url('AboutSectionPhoto3.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 5px;

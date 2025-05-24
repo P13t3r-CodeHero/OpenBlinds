@@ -98,11 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const formData = new FormData(this);
       const json = JSON.stringify(Object.fromEntries(formData));
+      const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3NDc4NDE2MDMsImV4cCI6MTc3OTM3NzYwMywiaWF0IjoxNzQ3ODQxNjAzLCJpc3MiOiJodHRwczovL29wZW5ibGluZHMuY28uemEiLCJhdWQiOiJlbWFpbC1zZXJ2aWNlIn0.OBsT-dA0Eo6Uk9QsfiF-FXNnINiaZ7l_hg3ql7eTUu0';
 
-      fetch('https://emailservice-f4apf3buanfrhudb.southafricanorth-01.azurewebsites.net/api/Email', {
+      fetch('https://everestsoftwareemailservice-hqdwhzb8hra3e0g4.southafricanorth-01.azurewebsites.net/api/Email', {
           method: 'POST',
           headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`
           },
           body: json
       })
